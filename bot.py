@@ -11,6 +11,7 @@ dp = Dispatcher()                        # [2]
 
 @dp.message(Command("start"))
 async def cmd_start(message: Message):
+    print("Let`s talk!")
     await message.answer("Let`s talk!")
 
         
